@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LearnIt - Online Platform</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ONLINE LEARNIG Platform</h1>
+      <p>Welcome back, Student!</p>
+    </header>
+
+    <section class="video-section">
+      <h2>Lesson 1: Introduction to HTML</h2>
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="quiz-section">
+      <h3>Quick Quiz:</h3>
+      <p>What does HTML stand for?</p>
+      <ul>
+        <li><button onclick="checkAnswer(this)">Hyper Trainer Marking Language</button></li>
+        <li><button onclick="checkAnswer(this)">HyperText Markup Language</button></li>
+        <li><button onclick="checkAnswer(this)">HighText Machine Language</button></li>
+      </ul>
+    </section>
+
+    <section class="progress-section">
+      <h4>Your Progress</h4>
+      <div id="progress">Not completed</div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
